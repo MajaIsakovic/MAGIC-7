@@ -45,6 +45,7 @@ body {
     padding-bottom: 90px;
 }
 .col-50 p {
+    line-height: 25px;
     color: #fff;
     font-size: 18px;
     width: 80%;
@@ -867,6 +868,11 @@ input::placeholder {
     .container-text {
         max-width: 890px;
     }
+
+    .input-line{
+        display: none;
+    }
+    
     .headline .row {
         flex-wrap: wrap-reverse; 
     }
