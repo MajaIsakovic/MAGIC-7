@@ -140,3 +140,46 @@ document.querySelector('.info').addEventListener("mouseout", function(){
   element.classList.remove("box-info");
 
 });
+
+// Mediaquery
+function myMediaQuery_1(x) {
+  if (x.matches) { // If media query matches
+    console.log('media applying');
+    // document.querySelector('.button').style.backgroundPosition = "center bottom";
+    function openCity(evt, cityName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+  
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(cityName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+    // function openCity(evt, cityName) {
+    //   var i, tabcontent, tablinks;
+    //   tabcontent = document.getElementsByClassName("tabcontent");
+  
+    //   for (i = 0; i < tabcontent.length; i++) {
+    //     tabcontent[i].style.display = "none";
+    //   }
+    //   tablinks = document.getElementsByClassName("tablinks");
+    //   for (i = 0; i < tablinks.length; i++) {
+    //     tablinks[i].className = tablinks[i].className.replace(" active", "");
+    //   }
+    //   document.getElementById(cityName).style.display = "block";
+    //   evt.currentTarget.className += " active";
+    // }
+ 
+  } else {
+    console.log('media not applying');
+  }
+}
+
+var x = window.matchMedia("(max-width: 1400px)")
+myMediaQuery_1(x) // Call listener function at run time
+x.addListener(myMediaQuery_1) // Attach listener function on state changes
