@@ -911,6 +911,10 @@ input::placeholder {
         display: none;
     }
 
+    .footer-input, .footer-submit {
+        display: block;
+    }
+
     /* --------- Collapse Nav in Footer Mob ----------- */
 
     .wrapp-dropdown {
@@ -997,7 +1001,7 @@ input::placeholder {
     }
     /* --------- End Collapse Nav in Footer Mob ----------- */
 
-    .footer-input {
+    /* .footer-input {
         width: 100%;
         background: #0f1923;
         border: 1px solid #0f1923;
@@ -1020,6 +1024,33 @@ input::placeholder {
         height: 55px;
         font-size: 18px;
         font-family: 'IBM Plex Sans', sans-serif;
+    } */
+
+    .footer-input {
+        width: 95%;
+        background: #0f1923;
+        border: 1px solid #0f1923;
+        border-radius: 4px;
+        margin-bottom: 40px;
+        height: 55px;
+        padding-left: 60px;
+        margin: 10px auto;
+    }
+    .footer-input:placeholder {
+        color: #9fa3a7;
+        font-size: 18px;
+        font-family: 'IBM Plex Sans', sans-serif; 
+    }
+    .footer-submit {
+        width: 95%;
+        background: #e33e42;
+        border: 1px solid #e33e42;
+        color: #fff;
+        border-radius: 4px;
+        height: 55px;
+        font-size: 18px;
+        font-family: 'IBM Plex Sans', sans-serif;
+        margin: 20px auto;
     }
 
     /* --------- Tabs --------- */
@@ -1101,6 +1132,109 @@ input::placeholder {
     .tagline h1:after {
         width: 15%
     }
+
+    .numbers:before {
+        width: 20%;
+        margin: 0 15px 5px 0;
+    }
+    .numbers:after {
+        width: 20%;
+        margin: 0 0 5px 15px;
+    }
+
+    .order-wrapper{
+        padding: 0px;
+    }
+
+    .text1 {
+        font-size: 26px;
+        top: -59px;
+    }
+
+    .order-wrapper .wrapp-text h3{
+        font-size: 22px;
+    }
+
+    .order-wrapper .wrapp-text p{
+        font-size: 18px;
+        padding-top: 20px;
+        padding-bottom: 40px;
+    }
+
+    .text-bottom-1{
+        font-size: 24px;
+        bottom: 24px;
+    }
+
+    .subscribe-field .form-center input{
+        width: 98% !important;
+        padding-left: 10px;
+        font-size: 12px;
+    }
+
+    .subscribe-field button{
+        margin-left: -76px;
+    }
+
+    .ar-right{
+        position: absolute;
+        top: -105px;
+        right: 2px;
+    }
+
+    .ar-left{
+        position: absolute;
+        top: -105px;
+        left: 2px;
+    }
+
+    .box{
+        width: 70px;
+        height: 85px;
+    }
+        
+    .paragraf, .limited{
+        font-size: 12px;
+    }
+
+    .text-wrap{
+        line-height: 0;
+    }
+
+    .order-boxes:hover{
+        border-left: 2px solid rgb(29, 46, 61);
+    }
+
+    .text3{
+        width: 380px;
+        font-size: 20px;
+        top: -29px;
+    }
+
+    .sec-3-p{
+        font-size: 30px;
+        display: block;
+        width: auto;
+    }
+
+    #subscribe{
+        font-size: 10px;
+    }
+
+    .arrow-wrapp{
+        width: 40px;
+        height: 40px;
+    }
+
+    .arrow-left{
+        width: 40px;
+        height: 40px;  
+    }
+
+    .arrow-right{
+        width: 40px;
+        height: 40px;  
+    }
     /* .last-col:before {
         width: 10%;
         left: 6%;
@@ -1136,7 +1270,20 @@ input::placeholder {
       
     }
 
+    .btn-span{
+        font-size: 12px;
+        right: 10px;
+        padding: 10px;
+        top: -25px;
 
+    }
+
+    .text2{
+        width: 140px;
+        font-size: 16px;
+        left: 10px;
+
+    }
 }
 
 @media (max-width: 720px) {
@@ -1180,8 +1327,55 @@ input::placeholder {
     .input-line {
         bottom: 210px;
     }
+    .tagline-img {
+        height: 50px;
+    }
     .tagline h1 {
         font-size: 45px;
         font-weight: 500;
     }
+    .tagline-col {
+        padding: 20px 5px 30px 5px;
+    }
+    .tagline-col h3 {
+        font-size: 13px;
+        height: 20px;
+    }
+    .tagline > h2 {
+        margin-bottom: 50px;
+    }
+    .tagline h1:before,
+    .tagline h1:after
+     {
+        top: 30px;
+    }
+    .last-col .tagline-col {
+        width: 150px;
+        height: 150px;
+    }
+    .last-col:before,
+    .last-col:after {
+        width: 12%;
+        top: 105px;
+    }
 }
+
+/* @media (max-width: 520px) {
+    .col-50 img {
+        max-width: 70%;
+         
+        margin-bottom: 30px;
+    }
+
+    .input-line{
+        display: none;
+    }
+
+    .input-line {
+        bottom: 210px;
+    }
+    .tagline h1 {
+        font-size: 45px;
+        font-weight: 500;
+    }
+} */

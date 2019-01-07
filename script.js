@@ -160,20 +160,6 @@ function myMediaQuery_1(x) {
       document.getElementById(cityName).style.display = "block";
       evt.currentTarget.className += " active";
     }
-    // function openCity(evt, cityName) {
-    //   var i, tabcontent, tablinks;
-    //   tabcontent = document.getElementsByClassName("tabcontent");
-  
-    //   for (i = 0; i < tabcontent.length; i++) {
-    //     tabcontent[i].style.display = "none";
-    //   }
-    //   tablinks = document.getElementsByClassName("tablinks");
-    //   for (i = 0; i < tablinks.length; i++) {
-    //     tablinks[i].className = tablinks[i].className.replace(" active", "");
-    //   }
-    //   document.getElementById(cityName).style.display = "block";
-    //   evt.currentTarget.className += " active";
-    // }
  
   } else {
     console.log('media not applying');
@@ -183,3 +169,16 @@ function myMediaQuery_1(x) {
 var x = window.matchMedia("(max-width: 1400px)")
 myMediaQuery_1(x) // Call listener function at run time
 x.addListener(myMediaQuery_1) // Attach listener function on state changes
+
+function myFunction(x) {
+  if (x.matches) { // If media query matches
+   console.log('maja');
+   document.getElementById('subscribe').placeholder= "Dont miss the event! Subscribe now.";
+  } else {
+    // document.body.style.backgroundColor = "pink";
+  }
+}
+
+var x = window.matchMedia("(max-width: 768px)")
+myFunction(x) // Call listener function at run time
+x.addListener(myFunction) // Attach listener function on state changes
