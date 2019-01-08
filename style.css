@@ -531,12 +531,10 @@ input::placeholder {
 
 .active > .button{
     background-color: rgb(19, 30, 40);
-    /* border-left: 1px solid rgb(120, 125, 131); */
-    /* border-left: 1px solid #00adca;
-    border-right: 1px solid #00adca; */
     background-image: url('btn-selected.svg');
-    /* background-size: cover;
-    background-position-x: center; */
+    background-size: cover;
+    background-position-x: center; 
+    background-position-y: center;
     background-repeat: no-repeat;
 }
 

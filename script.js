@@ -1,4 +1,3 @@
-console.log(123);
 document.getElementById('London').style.display = "block";
 
 function openCity(evt, cityName) {
@@ -170,8 +169,8 @@ var x = window.matchMedia("(max-width: 1400px)")
 myMediaQuery_1(x) // Call listener function at run time
 x.addListener(myMediaQuery_1) // Attach listener function on state changes
 
-function myFunction(x) {
-  if (x.matches) { // If media query matches
+function myFunction(y) {
+  if (y.matches) { // If media query matches
    console.log('maja');
    document.getElementById('subscribe').placeholder= "Dont miss the event! Subscribe now.";
   } else {
@@ -179,6 +178,6 @@ function myFunction(x) {
   }
 }
 
-var x = window.matchMedia("(max-width: 768px)")
-myFunction(x) // Call listener function at run time
-x.addListener(myFunction) // Attach listener function on state changes
+var y = window.matchMedia("(max-width: 768px)")
+myFunction(y) // Call listener function at run time
+y.addListener(myFunction) // Attach listener function on state changes
